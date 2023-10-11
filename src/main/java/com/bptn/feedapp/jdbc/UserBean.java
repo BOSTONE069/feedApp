@@ -13,7 +13,6 @@ public class UserBean {
 	private String emailId;
 	private Boolean emailVerified;
 	private Timestamp createdOn;
-	
 	public Integer getUserId() {
 		return userId;
 	}

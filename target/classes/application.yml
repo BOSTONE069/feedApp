@@ -53,11 +53,26 @@ spring:
        
 # Database Settings
   datasource:
-    url: jdbc:postgresql://localhost:5432/feedapp
+    url: jdbc:postgresql://localhost:5432/feedApp
     username: postgres
-    password: pg123
+    password: bostone
     hikari:
       maximum-pool-size: 2
   jpa:
     hibernate:
       ddl-auto: validate
+      
+      
+# Email Settings
+  mail:
+    username: bostoneochieng@gmail.com
+    password: 0721748865
+    host: smtp.gmail.com
+    port: 587
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
