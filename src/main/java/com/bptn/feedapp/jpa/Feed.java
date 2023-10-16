@@ -17,7 +17,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 
 @Entity
-@Table(name="\"Feed\"")
+@Table(name="\"feed\"")
 public class Feed implements Serializable {
 	
 	private static final long serialVersionUID = 1L; 

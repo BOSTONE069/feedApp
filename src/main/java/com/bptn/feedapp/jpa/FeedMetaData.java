@@ -36,7 +36,7 @@ public class FeedMetaData implements Serializable {
 	private Feed feed;
 	
 	@ManyToOne
-	@JoinColumn(name="\"actionUserId\"")
+	@JoinColumn(name="\"actionuserid\"")
 	private User user;
 	
 	public FeedMetaData() {

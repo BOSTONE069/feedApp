@@ -18,7 +18,8 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import static org.springframework.http.HttpStatus.OK;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
-
+import com.fasterxml.jackson.databind.JsonNode;
+import com.bptn.feedapp.jpa.Profile;
 @CrossOrigin(exposedHeaders = "Authorization")
 @RestController
 @RequestMapping("/user")
@@ -90,6 +91,46 @@ public class UserController {
 		logger.debug("User Authenticated, username: {}", user.getUsername());
 			
 		return new ResponseEntity<>(user, jwtHeader, OK);
+	}
+	
+	@GetMapping("/reset/{emailId}")
+	public void sendResetPasswordEmail(@PathVariable String emailId) {
+			
+			logger.debug("Sending Reset Password Email, emailId: {}", emailId);
+			
+			this.userService.sendResetPasswordEmail(emailId);
+	}
+	
+	@PostMapping("/reset")
+	public void passwordReset(@RequestBody JsonNode json) {
+
+		logger.debug("Resetting Password, password: {}", json.get("password").asText());
+
+		this.userService.resetPassword(json.get("password").asText());
+	}
+	
+	@GetMapping("/get")
+	public User getUser() {
+			
+		logger.debug("Getting User Data");
+			
+		return this.userService.getUser();
+	}
+	
+	@PostMapping("/update")
+	public User updateUser(@RequestBody User user) {
+			
+		logger.debug("Updating User Data");
+			
+		return this.userService.updateUser(user);
+	}
+	
+	@PostMapping("/update/profile")
+	public User updateUserProfile(@RequestBody Profile profile) {
+			
+		logger.debug("Updating User Profile Data, Profile: {}", profile.toString());
+			
+		return this.userService.updateUserProfile(profile);
 	}
 	
 	@GetMapping("/test")
