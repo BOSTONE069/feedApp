@@ -11,7 +11,7 @@ FeedApp is a robust social media application that provides a platform for users 
 - [Add a Feed](#Add_a_Feed)
 - [View All Feeds from Other Users](#View_All_Feeds_from_Other_Users)
 - [View My Feeds](#View_My_Feeds)
-- [User Interactions: Likes and Comments](#User_Interactions:_Likes_and_Comments)
+- [User Interactions: Likes and Comments](#User_Interactions_Likes_and_Comments)
 - [Database Interactions and Pages for Our Features](#Database_Interactions_and_Pages_for_Our_Features)
 - [License](#License)
 
@@ -39,7 +39,7 @@ View feeds of all the users, including images and written content. They can also
 # View_My_Feeds
 Users can view their feeds and see who liked and commented on them.
 
-# User_Interactions:_Likes_and_Comments
+# User_Interactions_Likes_and_Comments
 Users can like and comment on their feeds and the feeds of others.
 
 # Database_Interactions_and_Pages_for_Our_Features
