@@ -5,13 +5,14 @@ FeedApp is a robust social media application that provides a platform for users 
 - [Installation](#Installation)
 - [SignUp](#SignUp)
 - [Verify Email](#Verify_Email)
-- [Reset Password](# Reset_Password)
+- [Reset Password](#Reset_Password)
 - [Login](#Login)
 - [Update User Profile](#Update_User_Profile)
-- [View All Feeds from Other Users](#View All Feeds from Other Users)
-- [View My Feeds](#View My Feeds)
-- [User Interactions: Likes and Comments](#User Interactions: Likes and Comments)
-- [Database Interactions and Pages for Our Features](#Database Interactions and Pages for Our Features)
+- [Add a Feed](#Add_a_Feed)
+- [View All Feeds from Other Users](#View_All_Feeds_from_Other_Users)
+- [View My Feeds](#View_My_Feeds)
+- [User Interactions: Likes and Comments](#User_Interactions:_Likes_and_Comments)
+- [Database Interactions and Pages for Our Features](#Database_Interactions_and_Pages_for_Our_Features)
 - [License](#License)
 
 # Features
@@ -29,19 +30,19 @@ When users log in, we'll create a JWT session token for them, then use Spring Se
 # Update_User_Profile
 Users can update their profile in three ways: updating their basic profile text, changing their profile picture, or cropping their picture. They can also change their passwords.
 
-# Add a Feed
+# Add_a_Feed
 Users can add a new feed post with written content and an optional image.
 
-# View All Feeds from Other Users
+# View_All_Feeds_from_Other_Users
 View feeds of all the users, including images and written content. They can also apply pagination to the posts. We'll implement a "pull to refresh" feature to optimize the speed for first-time page loads.
 
-# View My Feeds
+# View_My_Feeds
 Users can view their feeds and see who liked and commented on them.
 
-# User Interactions: Likes and Comments
+# User_Interactions:_Likes_and_Comments
 Users can like and comment on their feeds and the feeds of others.
 
-# Database Interactions and Pages for Our Features
+# Database_Interactions_and_Pages_for_Our_Features
 To facilitate the features above,  writing end-points and the related business logic to ensure access the databases was done.
 
 # License
